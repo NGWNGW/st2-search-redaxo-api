@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Redaxo API: Search Selection",
+        "command": "redaxoapi_search_selection"
+    },
+    {
+        "caption": "Redaxo API: Search from Input",
+        "command": "redaxoapi_search_from_input"
+    }
+]

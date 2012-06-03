@@ -1,0 +1,20 @@
+{
+    "schema_version": "1.2",
+    "packages": [
+        {
+            "name": "Search Redaxo API",
+            "description": "Search the Redaxo API @ docs.redaxo.com for any selection or input.",
+            "author": "Jad Bitar,jdlx",
+            "homepage": "https://github.com/jdlx/st2-search-redaxo-api",
+            "last_modified": "2012-06-03 00:00:00",
+            "platforms": {
+                "*": [
+                    {
+                        "version": "1.0.0",
+                        "url": "https://nodeload.github.com/jdlx/st2-search-redaxo-api/zipball/master"
+                    }
+                ]
+            }
+        }
+    ]
+}

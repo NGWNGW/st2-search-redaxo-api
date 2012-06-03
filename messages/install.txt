@@ -1,0 +1,8 @@
+Search Redaxo API
+==================
+
+Search the Redaxo 4.3.2 API for any selection or input.
+
+This plugin is a port of the original CakePHP Search Plugin by Jad Bitar (www.jadbitar.com):
+
+https://github.com/jadb/st2-search-cakephp-api.

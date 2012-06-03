@@ -1,0 +1,58 @@
+h2. Sublime Text 2 plugin: Search Redaxo API
+
+_This Plugin is a port/(blatant ripoff) of "jadb's st2-search-cakephp-book":https://github.com/jadb/st2-search-cakephp-book adapted for searching the Redaxo API docs.. all code credits go to jadb! ;)_
+
+A command to search the Redaxo API for the current word.
+
+h4. Supports
+
+* Redaxo 4.3.2
+
+Submit a patch adding more and I'll include it.
+
+h3. Using
+
+Open the command palette (cmd-shift-p) and choose "Search Redaxo API" while your cursor is on a word.
+
+Make a keybind by adding the following to your `User/Default (OSX).sublime-keymap`:
+
+```
+    { "keys": ["super+shift+a"], "command": "redaxoapi_search_selection" },
+    { "keys": ["ctrl+shift+a"], "command": "redaxoapi_search_from_input" }
+```
+
+(I don't like plugins automatically adding keybinds, okay.)
+
+h2. Installing
+
+h3. With Package Control
+
+The easiest way to install this package is through Package Control, which can be found at this site: http://wbond.net/sublime_packages/package_control
+
+Once you install Package Control, restart ST2 and bring up the Command Palette (Command+Shift+p on OS X, Control+Shift+p on Linux/Windows). Select "Package Control: Install Package", wait while Package Control fetches the latest package list, then select "Search Redaxo API" when the list appears.
+
+First, you need to have `git` installed and in your `$PATH`. Afterwards you may need to restart Sublime Text 2 before the plugin will work.
+
+h3.Without Git
+
+Download the latest source zip from [github](https://nodeload.github.com/jadb/st2-search-cakephp-api/zipball/master) and extract the files to your Sublime Text "Packages" directory, into a new directory named Search Redaxo.
+
+h3. With Git
+
+h3. OSX
+
+    $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+    $ git clone git://github.com/jadb/st2-search-cakephp-api.git "Search Redaxo API"
+
+h3. Linux (Ubuntu like distros)
+
+    $ cd ~/.config/sublime-text-2/Packages/
+    $ git clone git://github.com/jadb/st2-search-cakephp-api.git "Search Redaxo API"
+
+h3. Windows 7:
+
+    Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 2\Packages"
+
+h3. Windows XP:
+
+    Copy the directory to: "C:\Documents and Settings\<username>\Application Data\Sublime Text 2\Packages"
