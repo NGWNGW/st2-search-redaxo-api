@@ -1,6 +1,6 @@
 h2. Sublime Text 2 plugin: Search Redaxo API
 
-_This Plugin is a port/(blatant ripoff) of "jadb's st2-search-cakephp-book":https://github.com/jadb/st2-search-cakephp-book adapted for searching the Redaxo API docs.. all code credits go to jadb! ;)_
+*NOTE:* _This Plugin is a port/(blatant ripoff) of "jadb's st2-search-cakephp-book":https://github.com/jadb/st2-search-cakephp-book adapted for searching the Redaxo API docs.. all code credits go to jadb! ;)_
 
 A command to search the Redaxo API for the current word.
 
@@ -16,10 +16,8 @@ Open the command palette (cmd-shift-p) and choose "Search Redaxo API" while your
 
 Make a keybind by adding the following to your `User/Default (OSX).sublime-keymap`:
 
-```
-    { "keys": ["super+shift+a"], "command": "redaxoapi_search_selection" },
-    { "keys": ["ctrl+shift+a"], "command": "redaxoapi_search_from_input" }
-```
+bc. { "keys": ["super+shift+a"], "command": "redaxoapi_search_selection" },
+{ "keys": ["ctrl+shift+a"], "command": "redaxoapi_search_from_input" }
 
 (I don't like plugins automatically adding keybinds, okay.)
 
