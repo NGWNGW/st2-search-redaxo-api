@@ -8,15 +8,20 @@
 # changelog
 # Jad Bitar - first implementation of search selection and search from input
 
+# SETTINGS: Redaxo Version - currently available: "4.2.1" , "4.3.1" , "4.3.2" , "5.x.x"
+rex_version = '4.3.2'
+
 import sublime
 import sublime_plugin
 
 import subprocess
 import webbrowser
 
+
 def SearchFor(text):
-    url = 'http://docs.redaxo.com/de/4.3.2/search.php?query=' + text.replace(' ','%20')
+    url = 'http://docs.redaxo.com/de/' + rex_version + '/search.php?query=' + text.replace(' ', '%20')
     webbrowser.open_new_tab(url)
+
 
 class RedaxoapiSearchSelectionCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -29,11 +34,13 @@ class RedaxoapiSearchSelectionCommand(sublime_plugin.TextCommand):
 
             SearchFor(text)
 
+
 class RedaxoapiSearchFromInputCommand(sublime_plugin.WindowCommand):
     def run(self):
         # Get the search item
         self.window.show_input_panel('Search Redaxo API for', '',
             self.on_done, self.on_change, self.on_cancel)
+
     def on_done(self, input):
         SearchFor(input)
 
