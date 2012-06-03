@@ -31,7 +31,7 @@ Once you install Package Control, restart ST2 and bring up the Command Palette (
 
 First, you need to have `git` installed and in your `$PATH`. Afterwards you may need to restart Sublime Text 2 before the plugin will work.
 
-h3.Without Git
+h3. Without Git
 
 Download the latest source zip from [github](https://nodeload.github.com/jadb/st2-search-cakephp-api/zipball/master) and extract the files to your Sublime Text "Packages" directory, into a new directory named Search Redaxo.
 
