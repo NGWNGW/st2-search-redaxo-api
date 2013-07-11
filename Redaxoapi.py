@@ -8,8 +8,8 @@
 # changelog
 # Jad Bitar - first implementation of search selection and search from input
 
-# SETTINGS: Redaxo Version - currently available: "4.2.1" , "4.3.1" , "4.3.2" , "5.x.x"
-rex_version = '4.3.2'
+# SETTINGS: Redaxo Version - currently available: "4.2.1" , "4.3.1" , "4.3.2" , "4.4.1", "5.x.x"
+rex_version = '4.4.1'
 
 import sublime
 import sublime_plugin
@@ -19,7 +19,7 @@ import webbrowser
 
 
 def SearchFor(text):
-    url = 'http://docs.redaxo.com/de/' + rex_version + '/search.php?query=' + text.replace(' ', '%20')
+    url = 'http://docs.redaxo.com/en/' + rex_version + '/search.php?query=' + text.replace(' ', '%20')
     webbrowser.open_new_tab(url)
 
 
